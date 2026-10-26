@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: #1e293b;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.1rem;
+}
+
+header p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* El mapa ocupa todo el espacio disponible */
+#map {
+  flex: 1;
+  width: 100%;
+}
+
+/* Botón flotante de voz */
+#btn-mic {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-mic.escuchando {
+  background-color: #dc2626;
+  animation: pulso 1.5s infinite;
+}
+
+@keyframes pulso {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

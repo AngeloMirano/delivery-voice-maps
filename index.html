@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Voice Maps</title>
+  
+  <!-- CSS de Leaflet para el mapa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado con estado -->
+  <header>
+    <h1>Delivery Voice Maps</h1>
+    <p id="estado">Presiona el micrófono para hablar...</p>
+  </header>
+
+  <!-- Contenedor del Mapa -->
+  <div id="map"></div>
+
+  <!-- Botón flotante para la voz -->
+  <button id="btn-mic">🎙️ Hablar</button>
+
+  <!-- JS de Leaflet y nuestro script -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
